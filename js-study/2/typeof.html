@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 사용</title>
+    <script>
+        // 산술 연산자
+
+        var num1 = 15;
+        var num2 = 2;
+
+        // 숫자형 변수 num1, 2 선언
+
+        var result;
+        // 연산자의 값을 출력할 undefined 함수 result 선언
+
+        result = num1 + num2;
+        document.write(result, "<br>"); //17
+
+        result = num1 - num2;
+        document.write(result, "<br>"); //13
+
+        result = num1 * num2;
+        document.write(result, "<br>"); //30
+
+        result = num1 / num2;
+        document.write(result, "<br>"); //7.5
+
+        result = num1 % num2; // 나머지
+        document.write(result, "<br>"); //1
+
+        // 문자 결합 연산자
+
+        var t1 = "잠옴 ";
+        var t2 = "자고싶다 ";
+        var t3 = 12;
+        var t4 = "시에는 자야지";
+
+        result = t1 + t2 + t3 + t4;
+        document.write(result, "<br>");
+
+        // 숫자형 + 문자형 = 문자형
+        
+        // 대입 연산자
+
+        var dae1 = 10;
+        var dae2 = 3;
+
+        dae1 += dae2;
+        document.write(dae1, "<br>"); //13
+        // 1 = 1+2
+        dae1 -= dae2;
+        document.write(dae1, "<br>"); //10
+        // 1 = 1-2
+        dae1 *= dae2;
+        document.write(dae1, "<br>"); //30
+        // 1 = 1*2
+        dae1 %= dae2;
+        document.write(dae1, "<br>"); //0
+        // 1 = 1%2 
+
+        // 여러 개의 문자형 데이터로 저장된 html 태그를 복합 대입 연산자를 이용하여 하나의 문자로 결합해 출력
+
+        var str = "<table border='1'>";
+        str += "<tr>";
+        str += "<td>1</td> <td>2</td> <td>3</td>";
+        str += "</tr>";
+        str += "</table>";
+        // +=가 반복되면서 쌓이는 개념인듯.. a = a+b -> a+b = a+b+c -> ... 를 계속 반복하는 형식
+        // 문자가 아닌 태그로 인식되어 표가 출력됨
+        document.write(str);
+
+        // 증감 연산자
+        var num1 = 10;
+        var num2 = 20;
+        
+        num1--; // 9
+        document.write(num1, "<br>");
+
+        num1++; // 10
+        document.write(num1, "<br>");
+
+        result = num2++; //result: 20, num2: 21
+        document.write(result, "<br>");
+        // result에 num2의 값인 20이 먼저 저장되고, 이후 num2의 값이 1 증가되어 num2에 21이 저장됨
+
+        result = ++num2; // 22
+        document.write(result, "<br>");
+        // num2가 21인 상태에서 ++ 1 증가가 먼저 되고, 증가된 num2(22)가 result에 저장됨
+
+        // 비교 연산자
+
+        var a = 10;
+        var b = 20;
+        var c = 10;
+        var f = "20";
+
+        // 비교 연산자로 출력할 경우 결괏값은 true or false로 나옴
+
+        result = a > b; // false
+        document.write(result, "<br>");
+
+        result = a < b; // true
+        document.write(result, "<br>");
+        
+        result = a <= b; // t
+        document.write(result, "<br>");
+
+        result = b == f; // t
+        document.write(result, "<br>");
+        // ==로 숫자를 비교할 경우 자료형 상관 없이 숫자만 일치하면 true를 반환
+
+        result = a != b; // t
+        document.write(result, "<br>");
+
+        result = b === f; // f
+        document.write(result, "<br><br>");
+        // ===는 변수의 자료형까지 비교하여 판별. b는 숫자형, f는 문자형이기 때문에 false
+
+        // 논리 연산자
+
+        var a = 10;
+        var b = 20;
+        var m = 30;
+        var n = 40;
+
+        result = a > b || b >= m || m > n; //f
+        document.write(result, "<br>");
+        // or 연산자. 값 중 하나라도 true가 존재할 경우 true로 반환하지만 셋 다 false임
+
+        result = a > b || b >= m || m <= n; //t
+        document.write(result, "<br>");
+        // m <= n 이 true라 true 반환
+
+        result = a <= b && b >= m && m <= n; //f
+        document.write(result, "<br>");
+        // and 연산자. 값 중 하나라도 false가 존재할 경우 false로 반환. b >= m은 false임
+
+        result = a <= b && b <= m && m <= n; //t
+        document.write(result, "<br>");
+
+        result= !(a > b); //t
+        document.write(result, "<br>");
+        // not 연산자. 피연산자의 값이 false일 경우 true를 반환. 짱구임? false 판독기라고 볼수있음
+
+        result= !(a < b); //f
+        document.write(result, "<br><br>");
+        // 10 < 20은 팩트기 때문에 false를 반환. ! 연산자 < 얜 걍 짱구임
+
+        // 삼항 조건 연산자
+        var a = 10;
+        var b = 3;
+
+        var result = a > b ? "javascript" : "hello";
+        document.write(result, "<br>"); // javascript
+        // 조건식의 결과에 따라 실행 결과가 달라지게 하는 연산자. 10>3은 ㄹㅇ이기 때문에 true일 시 출력되는 값인 javascript 가 나옴 반대도 해보겠음
+
+        var result = a < b ? "javascript" : "hello";
+        document.write(result, "<br><br>"); // hello
+
+        // 총정리 예제
+
+        var userHeight = 158;
+        var userWeight = 1;
+
+        var normal_w = (userHeight - 100) * 0.9;
+        document.write(normal_w, "<br>"); // 72
+        
+        var name = prompt("이름을 입력하세요." + "");
+        var height = prompt("키를 입력하세요." + "");
+        var weight = prompt("몸무게를 입력하세요."+ "");
+
+        var normal_w = (height - 100) * 0.9;
+
+        var result = weight >= normal_w - 5 && weight <= normal_w + 5;
+        result = result ? "적정 체중 입니다." : "적정 체중이 아닙니다.";
+
+        document.write(name + " 님은" + result);
+        
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,1382 @@
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/test
+$ cd
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~
+$ cd techit-school
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd learn-commit
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ git remote add origin https://github.com/jinjintv/learn-commit.git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ git remote -v
+origin  https://github.com/jinjintv/learn-commit.git (fetch)
+origin  https://github.com/jinjintv/learn-commit.git (push)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ git push -u origin main
+// local에 있는 main의 내용을 cloud로 push해서 upstream origin(저장한주소)로 전송
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/jinjintv/learn-commit.git/'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ 
+
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/test
+$ cd
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~
+$ cd techit-school
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd learn-commit
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ git remote add origin https://github.com/jinjintv/learn-commit.git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ git remote -v
+origin  https://github.com/jinjintv/learn-commit.git (fetch)
+origin  https://github.com/jinjintv/learn-commit.git (push)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ git push -u origin main
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/jinjintv/learn-commit.git/'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (18/18), 1.79 KiB | 366.00 KiB/s, done.
+Total 18 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/jinjintv/learn-commit.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ git remote add .
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-commit (main)
+$ cd ..
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ git clone https://github.com/jinjintv/learn-commit.git/ learn-reset
+Cloning into 'learn-reset'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 18 (delta 3), reused 18 (delta 3), pack-reused 0
+Receiving objects: 100% (18/18), done.
+Resolving deltas: 100% (3/3), done.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ rm -rf learn-reset
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ git clone https://github.com/jinjintv/learn-commit.git/ learn-reset
+Cloning into 'learn-reset'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 18 (delta 3), reused 18 (delta 3), pack-reused 0
+Receiving objects: 100% (18/18), done.
+Resolving deltas: 100% (3/3), done.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ git clone https://github.com/jinjintv/learn-commit.git/ learn-reset2
+Cloning into 'learn-reset2'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 18 (delta 3), reused 18 (delta 3), pack-reused 0
+Receiving objects: 100% (18/18), done.
+Resolving deltas: 100% (3/3), done.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ ls
+learn-commit/  learn-reset/  learn-reset2/
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ rm -rf learn-reset2
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cp -r learn-commit learn-reset
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd learn-reset
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git remote -v
+origin  https://github.com/jinjintv/learn-commit.git/ (fetch)
+origin  https://github.com/jinjintv/learn-commit.git/ (push)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git remote rm origin
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git remote -v
+
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git log --oneline
+ec20870 (HEAD -> main) 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git reset --mixed 0b3bb38
+Unstaged changes after reset:
+M       style.css
+
+// style.css 로 돌아감 working directory 로 보냄.
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ cat style.css
+* { box-sizing: border-box }
+\nbody { color: #121212; }
+// 남아있음
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git log --oneline
+0b3bb38 (HEAD -> main) HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+// 직전 커밋이 사라짐
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git log --oneline
+ec20870 (HEAD -> main) 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git reset --mixed 0b3bb38
+Unstaged changes after reset:
+M       style.css
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ cat style.css
+* { box-sizing: border-box }
+\nbody { color: #121212; }
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git log --oneline
+0b3bb38 (HEAD -> main) HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        learn-commit/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git add .
+warning: adding embedded git repository: learn-commit
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> learn-commit
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached learn-commit
+hint:
+hint: See "git help submodule" for more information.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git commit -m
+error: switch `m' requires a value
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git commit -m "글자 기본색상 선언"
+[main 00bf860] 湲??湲곕낯?됱긽 ?좎뼵
+ 2 files changed, 2 insertions(+)
+ create mode 160000 learn-commit
+fatal: unknown write failure on standard output
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git log --oneline
+00bf860 (HEAD -> main) 글자 기본색상 선언
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git reset --soft 0b3bb38
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~
+$ pwd
+/c/Users/dbwls
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~
+$ cd techit-school
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd learn-reset
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   learn-commit
+        modified:   style.css
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ cat style.css
+* { box-sizing: border-box }
+\nbody { color: #121212; }
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git commit -m "글자색 기본값 선언"
+[main 52a49a1] 글자색 기본값 선언
+ 2 files changed, 2 insertions(+)
+ create mode 160000 learn-commit
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git log --oneline
+52a49a1 (HEAD -> main) 글자색 기본값 선언
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git reset --mixed ^C
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git reset --mixed 0b3bb38
+Unstaged changes after reset:
+M       style.css
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ cat style.css
+* { box-sizing: border-box }
+\nbody { color: #121212; }
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ echo 'p {color: #767676; }' >> style.css
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ cat style.css
+* { box-sizing: border-box }
+\nbody { color: #121212; }
+p {color: #767676; }
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git add .
+warning: in the working copy of 'style.css', LF will be replaced by CRLF the next time Git touches it
+warning: adding embedded git repository: learn-commit
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> learn-commit
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached learn-commit
+hint:
+hint: See "git help submodule" for more information.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git commit -m "본문 기본글자색과 문단의 글자색 지정"
+[main b1d1b08] 본문 기본글자색과 문단의 글자색 지정
+ 2 files changed, 3 insertions(+)
+ create mode 160000 learn-commit
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git one
+b1d1b08 (HEAD -> main) 본문 기본글자색과 문단의 글자색
+지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ cat style.css
+* { box-sizing: border-box }
+\nbody { color: #121212; }
+p {color: #767676; }
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git reset --soft 0b3bb38
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   learn-commit
+        modified:   style.css
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git commit -m "본문 및 문단의 기본 글자색 지정"
+[main 7a0d7e5] 본문 및 문단의 기본 글자색 지정
+ 2 files changed, 3 insertions(+)
+ create mode 160000 learn-commit
+git
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git one
+7a0d7e5 (HEAD -> main) 본문 및 문단의 기본 글자색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git config --global core.autocrlf ture
+
+나는 똥
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+* main
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch likelion
+
+// 새 branch 생성
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+  likelion
+* main
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git checkout likelion
+Switched to branch 'likelion'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ ^C
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git checkout main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git switch likelion
+Switched to branch 'likelion'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git switch main
+Switched to branch 'main'
+
+// checkout보다는 새로 생긴 명령인 switch로 branch 이동을 권장(직관적)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch -m likelion techit
+
+// likelion branch를 techit으로 이름 변경
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+* main
+  techit
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch -d techit
+Deleted branch techit (was ec20870).
+
+// techit branch 삭제
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+* main
+
+// 삭제 확인
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git checkout -b likelion
+Switched to a new branch 'likelion'
+
+// likelion branch를 새로 만들어 해당 위치로 이동
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git switch -c techit
+Switched to a new branch 'techit'
+
+// checkout -b(ranch) = switch -c(reate) 동일 동작 
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (techit)
+$ git switch main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git one
+ec20870 (HEAD -> main, techit, likelion) 기본 전경색 지정
+// HEAD가 3개의 branch를 모두 담고 있음
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset2 (main)
+$ cd ..
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ ls
+learn-commit/  learn-reset/  learn-reset2/
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd learn-reset
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git one
+5c7f647 (HEAD -> main) Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git remote add origin https://github.com/jinjintv/learn-reset.git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git remote -v
+origin  https://github.com/jinjintv/learn-reset.git (fetch)
+origin  https://github.com/jinjintv/learn-reset.git (push)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git push -u origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (12/12), 1.19 KiB | 1.19 MiB/s, done.
+Total 12 (delta 2), reused 12 (delta 2), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/jinjintv/learn-reset.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git config --global diff.tool vscode
+git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REM
+git config --global pull.rebase false
+git config --global mergetool vscode
+git config --global mergetool.vscode.cmd=code --wait $MERGED
+error: key does not contain a section: mergetool
+error: invalid key: mergetool.vscode.cmd=code
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ git config --global -e
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-reset (main)
+$ cd ..
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ git config --global -e
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ ^[[200~git config --global core.editor "code --wait"~
+bash: $'\E[200~git': command not found
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ git config --global core.editor "code --wait"
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ ls
+learn-commit/  learn-reset/  learn-reset2/
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cp -r learn-commit learn-branch
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ ls
+learn-branch/  learn-commit/  learn-reset/  learn-reset2/
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd learn-branch
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git remote -v
+origin  https://github.com/jinjintv/learn-commit.git (fetch)
+origin  https://github.com/jinjintv/learn-commit.git (push)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git remote rm origin
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git remote -v
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+* main
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch likelion
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+  likelion
+* main
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git checkout likelion
+Switched to branch 'likelion'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ ^C
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git checkout main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git switch likelion
+Switched to branch 'likelion'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git switch main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch -m likelion techit
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+* main
+  techit
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch -d techit
+Deleted branch techit (was ec20870).
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+* main
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git checkout -b likelion
+Switched to a new branch 'likelion'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git checkout main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git switch -c techit
+Switched to a new branch 'techit'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (techit)
+$ git switch main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git one
+ec20870 (HEAD -> main, techit, likelion) 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch -d techit likelion
+Deleted branch techit (was ec20870).
+Deleted branch likelion (was ec20870).
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git branch
+* main
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git switch -c likelion
+Switched to a new branch 'likelion'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git one
+ec20870 (HEAD -> likelion, main) 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ echo 'Frontend School' > main.js
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git status
+On branch likelion
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git add .
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git commit -m
+error: switch `m' requires a value
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git commit
+Aborting commit due to empty commit message.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git commit
+[likelion b7bf90f] 프론트엔드 개발자에게 유용한 자바스크립트
+ 1 file changed, 1 insertion(+)
+ create mode 100644 main.js
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git one
+b7bf90f (HEAD -> likelion) 프론트엔드 개발자에게 유용한 자바스크립트
+ec20870 (main) 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ echo '#브랜치를 활용하자' > Git.md
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git status
+On branch likelion
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git commit
+On branch likelion
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git add .
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git commit
+[likelion 1410728] 브랜치 사용하기
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Git.md
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git one
+1410728 (HEAD -> likelion) 브랜치 사용하기
+b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+ec20870 (main) 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git switch main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ ls
+index.html  README.md  style.css
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git one
+ec20870 (HEAD -> main) 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git log --oneline --graph
+* ec20870 (HEAD -> main) 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git switch likelion
+Switched to branch 'likelion'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git switch main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git merge likelion
+Updating ec20870..1410728
+Fast-forward
+ Git.md  | 1 +
+ main.js | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 Git.md
+ create mode 100644 main.js
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ ls
+Git.md  index.html  main.js  README.md  style.css
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git log --oneline --graph
+* 1410728 (HEAD -> main, likelion) 브랜치 사용하기
+* b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ echo '10기' >> main.js
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ cat main.js
+Frontend School
+10기
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git add .
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.js
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git commit
+[main 09245d4] 디미디 화이팅!
+ 1 file changed, 1 insertion(+)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git log --oneline --graph
+* 09245d4 (HEAD -> main) 디미디 화이팅!
+* 1410728 (likelion) 브랜치 사용하기
+* b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git switch likelion
+Switched to branch 'likelion'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ echo '힘내자 디미디' >> main.js
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ cat main.js
+Frontend School
+힘내자 디미디
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git add .
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git status
+On branch likelion
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.js
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git commit
+[likelion 780f1a9] 힘내자 디미디
+ 1 file changed, 1 insertion(+)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git log --oneline --graph
+* 780f1a9 (HEAD -> likelion) 힘내자 디미디
+* 1410728 브랜치 사용하기
+* b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git merge --abort
+fatal: There is no merge to abort (MERGE_HEAD missing).
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ cd ..
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ git merge --abort
+fatal: not a git repository (or any of the parent directories): .git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ git switch likelion
+fatal: not a git repository (or any of the parent directories): .git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ git switch main
+fatal: not a git repository (or any of the parent directories): .git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd learn-branch
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ cat main.js
+Frontend School
+힘내자 디미디
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (likelion)
+$ git switch main
+Switched to branch 'main'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git merge likelion
+Auto-merging main.js
+CONFLICT (content): Merge conflict in main.js
+Automatic merge failed; fix conflicts and then commit the result.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd learn-branch
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git one
+c0a06e9 (HEAD -> main, origin/main) Merge branch 'likelion'
+c1f0451 (likelion) 사랑안해요 Git
+7d4a46d Git 정복
+b7ef1b0 Merge branch 'likelion'
+780f1a9 힘내자 디미디
+09245d4 디미디 화이팅!
+1410728 브랜치 사용하기
+b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+ec20870 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git checkout 0b3bb38
+Note: switching to '0b3bb38'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0b3bb38 HTML 기본 구조 마크업
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch ((0b3bb38...))
+$ git log --oneline --graph
+* 0b3bb38 (HEAD) HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch ((0b3bb38...))
+$ cat README.md
+# Git을 배워봅시다.
+\nGit 저장소 초기화하기
+작업 영역, 스테이징 영역 그리고 커밋
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch ((0b3bb38...))
+$ git checkout HEAD~
+Previous HEAD position was 0b3bb38 HTML 기본 구조 마크업
+HEAD is now at 5c7f647 Git의 세가지 상태
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch ((5c7f647...))
+$ git checkout main
+Previous HEAD position was 5c7f647 Git의 세가지 상태
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git log --oneline --graph
+*   c0a06e9 (HEAD -> main, origin/main) Merge branch 'likelion'
+|\
+| * c1f0451 (likelion) 사랑안해요 Git
+* | 7d4a46d Git 정복
+* | b7ef1b0 Merge branch 'likelion'
+|\|
+| * 780f1a9 힘내자 디미디
+* | 09245d4 디미디 화이팅!
+|/
+* 1410728 브랜치 사용하기
+* b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+
+// reset = 되돌리는거 checkout = 그 시점에 무엇을 했는지 확인하는것
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git checkout ec20870
+Note: switching to 'ec20870'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at ec20870 기본 전경색 지정
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch ((ec20870...))
+$ git log --oneline --graph
+* ec20870 (HEAD) 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch ((ec20870...))
+$ git switch -c styling
+Switched to a new branch 'styling'
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (styling)
+$ echo 'div {margin: 1rem; }' >> style.css
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (styling)
+$ git add .
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (styling)
+$ git commit -m "상자 여백 추가"
+[styling f693051] 상자 여백 추가
+ 1 file changed, 1 insertion(+)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (styling)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git one
+c0a06e9 (HEAD -> main, origin/main) Merge branch 'likelion'
+c1f0451 (likelion) 사랑안해요 Git
+7d4a46d Git 정복
+b7ef1b0 Merge branch 'likelion'
+780f1a9 힘내자 디미디
+09245d4 디미디 화이팅!
+1410728 브랜치 사용하기
+b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+ec20870 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git log --oneline --graph --all
+* f693051 (styling) 상자 여백 추가
+| *   c0a06e9 (HEAD -> main, origin/main) Merge branch 'likelion'
+| |\
+| | * c1f0451 (likelion) 사랑안해요 Git
+| * | 7d4a46d Git 정복
+| * | b7ef1b0 Merge branch 'likelion'
+| |\|
+| | * 780f1a9 힘내자 디미디
+| * | 09245d4 디미디 화이팅!
+| |/
+| * 1410728 브랜치 사용하기
+| * b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+|/
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git merge styling
+Merge made by the 'ort' strategy.
+ style.css | 1 +
+ 1 file changed, 1 insertion(+)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git log --oneline --graph
+*   4bc862e (HEAD -> main) Merge branch 'styling'
+|\
+| * f693051 (styling) 상자 여백 추가
+* |   c0a06e9 (origin/main) Merge branch 'likelion'
+|\ \
+| * | c1f0451 (likelion) 사랑안해요 Git
+* | | 7d4a46d Git 정복
+* | | b7ef1b0 Merge branch 'likelion'
+|\| |
+| * | 780f1a9 힘내자 디미디
+* | | 09245d4 디미디 화이팅!
+|/ /
+* | 1410728 브랜치 사용하기
+* | b7bf90f 프론트엔드 개발자에게 유용한 자바스크립트
+|/
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/learn-branch (main)
+$ git commit
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd techit-school mkdir office home
+bash: cd: too many arguments
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ mkdir office home
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ ls
+home/          learn-branch2/  learn-reset/   office/
+learn-branch/  learn-commit/   learn-reset2/
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cp -r learn-commit office/learn-remote
+c
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school
+$ cd office/learn-remote
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ git remote -v
+origin  https://github.com/jinjintv/learn-commit.git (fetch)
+origin  https://github.com/jinjintv/learn-commit.git (push)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ git remote rm origin
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ cd ../../home
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home
+$ ls
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home
+$ git clone https://github.com/jinjintv/learn-remote.git
+Cloning into 'learn-remote'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 18 (delta 3), reused 18 (delta 3), pack-reused 0
+Receiving objects: 100% (18/18), done.
+Resolving deltas: 100% (3/3), done.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home
+$ cd learn-remote
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ echo 'Pull, Push 정복하기' >> README.md
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$  git add .
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git commit -m "원격저장소 다루기"
+[main a8014aa] 원격저장소 다루기
+ 1 file changed, 1 insertion(+)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git log --oneline
+a8014aa (HEAD -> main) 원격저장소 다루기
+ec20870 (origin/main, origin/HEAD) 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 388 bytes | 388.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jinjintv/learn-remote.git
+   ec20870..a8014aa  main -> main
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git log --oneline --graph
+* a8014aa (HEAD -> main, origin/main, origin/HEAD) 원격저장소 다루기
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ cd ../../office
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office
+$ cd learn-remote
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ git log --oneline --graph
+* ec20870 (HEAD -> main, origin/main) 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 368 bytes | 40.00 KiB/s, done.
+From https://github.com/jinjintv/learn-remote
+   ec20870..a8014aa  main       -> origin/main
+Updating ec20870..a8014aa
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ git log --oneline
+a8014aa (HEAD -> main, origin/main) 원격저장소 다루기
+ec20870 기본 전경색 지정
+0b3bb38 HTML 기본 구조 마크업
+5c7f647 Git의 세가지 상태
+9071009 모든 요소에 기본 박스 사이징 설정
+25a0cd2 DTD 선언
+b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ echo 'fetch 정복하기' >> README.md
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ git add .
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ git commit
+[main b4a8798] 이미 했는데...
+ 1 file changed, 1 insertion(+)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 376 bytes | 376.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jinjintv/learn-remote.git
+   a8014aa..b4a8798  main -> main
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/office/learn-remote (main)
+$ cd ../../home
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home
+$ cd learn-remote
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git log --oneline --graph
+* a8014aa (HEAD -> main, origin/main, origin/HEAD) 원격저장소 다루기
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ echo 'fetch 사용하기' >> README.md
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git commit -am "fetch 명령어 활용"
+[main 4e3f628] fetch 명령어 활용
+ 1 file changed, 1 insertion(+)
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git push
+To https://github.com/jinjintv/learn-remote.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/jinjintv/learn-remote.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 356 bytes | 25.00 KiB/s, done.
+From https://github.com/jinjintv/learn-remote
+   a8014aa..b4a8798  main       -> origin/main
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main|MERGING)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main|MERGING)
+$ git commit -am "충돌 해결"
+[main 5a30f65] 충돌 해결
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git log --oneline --graph
+*   5a30f65 (HEAD -> main) 충돌 해결
+|\
+| * b4a8798 (origin/main, origin/HEAD) 이미 했는데...
+* | 4e3f628 fetch 명령어 활용
+|/
+* a8014aa 원격저장소 다루기
+* ec20870 기본 전경색 지정
+* 0b3bb38 HTML 기본 구조 마크업
+* 5c7f647 Git의 세가지 상태
+* 9071009 모든 요소에 기본 박스 사이징 설정
+* 25a0cd2 DTD 선언
+* b01d285 분산형 버전관리 시스템 Git
+
+dbwls@DESKTOP-73A43E0 MINGW64 ~/techit-school/home/learn-remote (main)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 717 bytes | 717.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/jinjintv/learn-remote.git
+   b4a8798..5a30f65  main -> main

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 사용</title>
+    <script>
+
+        // 문제 1
+
+        var price1 = 3000;
+        var price2 = 6000;
+        var price3 = 3000;
+
+        var total = price1 + price2 + price3;
+        var appro = 10000;
+
+        result = total > appro ? total-appro + "원 초과했습니다." : "돈 관리 잘했어요.";
+        document.write(result);
+
+        // 문제 2
+
+        // 질의응답 창을 이용하여 4분기 판매량 입력 = prompt 사용
+        // 전 분기 평균 판매량보다 높거나 같을 경우 평균이상 출력, 낮을 경우 미달이다 출력 = 삼항 조건 연산자로 나타내자
+        
+        var a = prompt("4분기 판매량은?", "");
+        var b = 1200;
+        var c = 1300;
+        var d = 1000;
+
+        var avg = (b + c + d) / 3;
+
+
+        // 4분기 판매량 a, 1,2,3분기 판매량 b,c,d로 나타내고 b,c,d의 평균 판매량을 avg 변수에 먼저 담아놓기
+
+        var result = a >= avg ? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+
+        document.write(result);
+    </script>
+</head>
+<body>
+</body>
+</html> 
