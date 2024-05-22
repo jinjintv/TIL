@@ -1,0 +1,29 @@
+$bg: #5c434c;
+$orange: #f09462;
+$milk: #f5d6b4;
+
+@mixin contents {
+    width: 80px;
+    height: 80px;
+    border-radius: 90px 0 0;
+    border: 10px solid $bg;
+}
+
+@mixin container {
+    display: flex;
+    flex-flow: row wrap;
+}
+* {
+    background: $bg;
+    margin: 0;
+}
+body {
+    @include container;
+}
+.a {
+    @include contents;
+    background: $orange;
+}
+div {
+    @include contents;
+}

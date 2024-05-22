@@ -1,0 +1,25 @@
+* {
+    background: #5c434c;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .a {
+    width: 80px;
+    height: 80px;
+    border-radius: 90px 0 0;
+    border: 10px solid #5c434c;
+    background: #f09462;
+  }
+  
+  div {
+    width: 80px;
+    height: 80px;
+    border-radius: 90px 0 0;
+    border: 10px solid #5c434c;
+    background: #f5d6b4;
+  }
